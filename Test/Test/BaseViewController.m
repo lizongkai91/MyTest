@@ -28,11 +28,13 @@
     [customNav CustomNavigationTitle:self.navigationController];
     [customNav CustomNavigationItem:self.navigationItem Block:^(NSInteger index) {
 
-        if (index == customEventClickLBtn2)
-        NSLog(@"index = %ld",index);
+//        if (index == customEventClickLBtn2)
+//        NSLog(@"index = %ld",index);
+//        
+//        TestOneVC *testOneVC = [[TestOneVC alloc] init];
+//        [self.navigationController pushViewController:testOneVC animated:YES];
         
-        TestOneVC *testOneVC = [[TestOneVC alloc] init];
-        [self.navigationController pushViewController:testOneVC animated:YES];
+        [self setCustomNavigationBack];
     }];
     
 //    NSString * str;

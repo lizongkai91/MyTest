@@ -12,4 +12,7 @@
 
 @interface BaseViewController : UIViewController
 
+
+- (void)setCustomNavigationBack;
+
 @end

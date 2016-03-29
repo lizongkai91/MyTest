@@ -8,6 +8,12 @@
 
 #import "AppDelegate.h"
 #import "BaseViewController.h"
+#import "TestOneVC.h"
+#import "TestTwoCtrl.h"
+#import "TestThreeCtrl.h"
+#import "TestFourCtrl.h"
+
+#define PNGIMAGEWithName(ImageName) [UIImage imageNamed:ImageName]
 
 @interface AppDelegate ()
 
@@ -19,9 +25,36 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    BaseViewController *baseVC = [[BaseViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:baseVC];
-    self.window.rootViewController = nav;
+    [application setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+    
+//    BaseViewController *baseVC = [[BaseViewController alloc] init];
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:baseVC];
+//    self.window.rootViewController = nav;
+    
+    TestOneVC *oneVc = [[TestOneVC alloc] init];
+    UINavigationController *navOne = [[UINavigationController alloc] initWithRootViewController:oneVc];
+    navOne.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:[PNGIMAGEWithName(@"image1") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] tag:101];
+    [navOne.tabBarItem setSelectedImage:[PNGIMAGEWithName(@"image1") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    
+    TestTwoCtrl *twoVC = [[TestTwoCtrl alloc] init];
+    UINavigationController *navTwo = [[UINavigationController alloc] initWithRootViewController:twoVC];
+    navTwo.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:[PNGIMAGEWithName(@"image1") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] tag:102];
+    [navTwo.tabBarItem setSelectedImage:[PNGIMAGEWithName(@"image1") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    
+    TestThreeCtrl *testThreeVC = [[TestThreeCtrl alloc] init];
+    UINavigationController *threeNav = [[UINavigationController alloc] initWithRootViewController:testThreeVC];
+    threeNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:[PNGIMAGEWithName(@"gife-icon") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] tag:101];
+    [threeNav.tabBarItem setSelectedImage:[PNGIMAGEWithName(@"gife-icon") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    
+    TestFourCtrl *fourVc = [[TestFourCtrl alloc] init];
+    UINavigationController *navFour = [[UINavigationController alloc] initWithRootViewController:fourVc];
+    navFour.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:[PNGIMAGEWithName(@"image5") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] tag:101];
+    [navFour.tabBarItem setSelectedImage:[PNGIMAGEWithName(@"image5") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[navOne,navTwo,threeNav,navFour];
+    
+    self.window.rootViewController = tabBarController;
     
     return YES;
 }

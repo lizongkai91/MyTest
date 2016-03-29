@@ -15,6 +15,10 @@
 		887605051C755FD8003DD1F1 /* CustomNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 887605041C755FD8003DD1F1 /* CustomNavigation.m */; };
 		887605081C756A9B003DD1F1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 887605071C756A9B003DD1F1 /* BaseViewController.m */; };
 		8876050B1C756E0E003DD1F1 /* TestOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8876050A1C756E0E003DD1F1 /* TestOneVC.m */; };
+		888832FB1C7EA5A300876A06 /* TestOneCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 888832FA1C7EA5A300876A06 /* TestOneCtrl.m */; };
+		888832FE1C7EA5BF00876A06 /* TestTwoCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 888832FD1C7EA5BF00876A06 /* TestTwoCtrl.m */; };
+		888833011C7EA63400876A06 /* TestThreeCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 888833001C7EA63400876A06 /* TestThreeCtrl.m */; };
+		888833041C7EA65700876A06 /* TestFourCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 888833031C7EA65700876A06 /* TestFourCtrl.m */; };
 		888D38961C76BC7100592B77 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 888D38951C76BC7100592B77 /* Media.xcassets */; };
 		88C279101C7C437E00D1E6C3 /* UIView+RoundCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C2790F1C7C437E00D1E6C3 /* UIView+RoundCorner.m */; };
 /* End PBXBuildFile section */
@@ -34,6 +38,14 @@
 		887605071C756A9B003DD1F1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		887605091C756E0E003DD1F1 /* TestOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOneVC.h; sourceTree = "<group>"; };
 		8876050A1C756E0E003DD1F1 /* TestOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOneVC.m; sourceTree = "<group>"; };
+		888832F91C7EA5A300876A06 /* TestOneCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOneCtrl.h; sourceTree = "<group>"; };
+		888832FA1C7EA5A300876A06 /* TestOneCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOneCtrl.m; sourceTree = "<group>"; };
+		888832FC1C7EA5BF00876A06 /* TestTwoCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTwoCtrl.h; sourceTree = "<group>"; };
+		888832FD1C7EA5BF00876A06 /* TestTwoCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTwoCtrl.m; sourceTree = "<group>"; };
+		888832FF1C7EA63400876A06 /* TestThreeCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestThreeCtrl.h; sourceTree = "<group>"; };
+		888833001C7EA63400876A06 /* TestThreeCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestThreeCtrl.m; sourceTree = "<group>"; };
+		888833021C7EA65700876A06 /* TestFourCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFourCtrl.h; sourceTree = "<group>"; };
+		888833031C7EA65700876A06 /* TestFourCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFourCtrl.m; sourceTree = "<group>"; };
 		888D38951C76BC7100592B77 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		888D38971C76F51E00592B77 /* Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Test.entitlements; sourceTree = "<group>"; };
 		88C2790E1C7C437E00D1E6C3 /* UIView+RoundCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundCorner.h"; sourceTree = "<group>"; };
@@ -70,6 +82,7 @@
 		887604EB1C7556BA003DD1F1 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				888832F81C7EA55500876A06 /* TestBar */,
 				888D38971C76F51E00592B77 /* Test.entitlements */,
 				887604EF1C7556BA003DD1F1 /* AppDelegate.h */,
 				887604F01C7556BA003DD1F1 /* AppDelegate.m */,
@@ -97,6 +110,21 @@
 				887604ED1C7556BA003DD1F1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		888832F81C7EA55500876A06 /* TestBar */ = {
+			isa = PBXGroup;
+			children = (
+				888832F91C7EA5A300876A06 /* TestOneCtrl.h */,
+				888832FA1C7EA5A300876A06 /* TestOneCtrl.m */,
+				888832FC1C7EA5BF00876A06 /* TestTwoCtrl.h */,
+				888832FD1C7EA5BF00876A06 /* TestTwoCtrl.m */,
+				888832FF1C7EA63400876A06 /* TestThreeCtrl.h */,
+				888833001C7EA63400876A06 /* TestThreeCtrl.m */,
+				888833021C7EA65700876A06 /* TestFourCtrl.h */,
+				888833031C7EA65700876A06 /* TestFourCtrl.m */,
+			);
+			name = TestBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +207,13 @@
 				887605051C755FD8003DD1F1 /* CustomNavigation.m in Sources */,
 				887605081C756A9B003DD1F1 /* BaseViewController.m in Sources */,
 				88C279101C7C437E00D1E6C3 /* UIView+RoundCorner.m in Sources */,
+				888833011C7EA63400876A06 /* TestThreeCtrl.m in Sources */,
+				888833041C7EA65700876A06 /* TestFourCtrl.m in Sources */,
+				888832FB1C7EA5A300876A06 /* TestOneCtrl.m in Sources */,
 				8876050B1C756E0E003DD1F1 /* TestOneVC.m in Sources */,
 				887604F11C7556BA003DD1F1 /* AppDelegate.m in Sources */,
 				887604EE1C7556BA003DD1F1 /* main.m in Sources */,
+				888832FE1C7EA5BF00876A06 /* TestTwoCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +327,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhuofutong.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +343,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhuofutong.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";

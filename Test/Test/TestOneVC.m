@@ -45,7 +45,14 @@
     
     NSMutableArray *array= [[NSMutableArray alloc]init];
     [array addObject:[NSNumber numberWithInt:3]];
+    
 
+    NSString *result = @"2323";
+    NSString *tempStr1 = [result stringByReplacingOccurrencesOfString:@"\\n" withString:@""];
+}
+
+- (void)setCustomNavigationBack{
+    NSLog(@"fwiefjoweijfowiejfowiejfoiwjeofew");
 }
 
 - (UILabel *)showLabelWithFrame:(CGRect)frame Content:(NSString *)content Font:(UIFont *)font{
